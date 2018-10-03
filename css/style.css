@@ -1,0 +1,78 @@
+body {
+	width: 100%;
+	margin: 0;
+}
+
+.header-container {
+	height: 100px;
+	width: 100%;
+	background: #5b7989;
+	border-radius: 10px 10px 0 0;
+}
+
+.header-container h1{
+	display: inline-block;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+}
+
+.header-container .menu{
+	margin-top: 25px;
+	float: right;
+}
+
+.header-container .menu ul{
+	margin-right: 25px;
+	display: inline-block;
+}
+
+.header-container .menu ul li{
+	display: inline-block;
+}
+
+.header-container .menu ul li a{
+	text-decoration: none;
+}
+
+.img-container {
+	border-radius: 1px;
+	background: black;
+	width: 100%;
+}
+
+.c1 {
+	width: 100%;
+	background: #82c3a6;
+}
+
+.c1 img{
+	padding: 15px;
+	display: block;
+	margin: auto;
+
+}
+
+.c2 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background: #d5c75f;
+}
+
+.c2 div {
+	width: 50%;
+	text-align: center;
+	padding: 15px;
+}
+
+
+.footer-container {
+	width: 100%;
+	margin-top: 0;
+	background:  #C6d5c5;
+
+}
+
+.contacto h3{
+	margin: 0;
+}
