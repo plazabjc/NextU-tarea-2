@@ -1,78 +1,162 @@
 body {
-	width: 100%;
-	margin: 0;
-}
-
-.header-container {
-	height: 100px;
-	width: 100%;
-	background: #5b7989;
-	border-radius: 10px 10px 0 0;
-}
-
-.header-container h1{
-	display: inline-block;
-	color: white;
-	text-shadow: 2px 2px #02010a;
-}
-
-.header-container .menu{
-	margin-top: 25px;
-	float: right;
-}
-
-.header-container .menu ul{
-	margin-right: 25px;
-	display: inline-block;
-}
-
-.header-container .menu ul li{
-	display: inline-block;
-}
-
-.header-container .menu ul li a{
-	text-decoration: none;
-}
-
-.img-container {
-	border-radius: 1px;
 	background: black;
 	width: 100%;
-}
-
-.c1 {
-	width: 100%;
-	background: #82c3a6;
-}
-
-.c1 img{
-	padding: 15px;
-	display: block;
-	margin: auto;
-
-}
-
-.c2 {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	background: #d5c75f;
-}
-
-.c2 div {
-	width: 50%;
-	text-align: center;
-	padding: 15px;
-}
-
-
-.footer-container {
-	width: 100%;
-	margin-top: 0;
-	background:  #C6d5c5;
-
-}
-
-.contacto h3{
 	margin: 0;
+	font-family: 'Dancing Script';
+}
+
+	.contenido {
+		max-width: 900px;
+		margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.header-container {
+		height: 100px;
+		width: 100%;
+		background: #5b7989;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.header-container h1{
+		margin-left: 10px;
+		display: inline-block;
+		color: white;
+		text-shadow: 2px 2px #02010a;
+	}
+
+	.header-container .menu{
+		margin-top: 25px;
+		float: right;
+	}
+
+	.header-container .menu ul{
+		margin-right: 25px;
+		display: inline-block;
+	}
+
+	.header-container .menu ul li{
+		display: inline-block;
+	}
+
+	.header-container .menu ul li a{
+		text-decoration: none;
+		color: white;
+		font-size: 22px;
+		padding: 0 10px;
+	}
+
+	.img-container {
+		border-radius: 1px;
+		background: black;
+		width: 100%;
+	}
+
+	.c1 {
+		width: 100%;
+		background: #82c3a6;
+	}
+
+	.c1 img{
+		padding: 15px;
+		display: block;
+		margin: auto;
+
+	}
+
+	.c2 {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		background: #d5c75f;
+	}
+
+	.c2 div {
+		margin: auto;
+		text-align: center;
+		padding: 15px;
+	}
+
+	.c2 img {
+		transition-duration: 1s;
+		border: 1px solid black;
+	}
+
+	.c2-rotate img:hover {
+		transform: rotate(10deg);
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	.c2-translate img:hover {
+		transform: translate(20px, -5px);
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	/* FOOTER*/
+
+	.footer-container {
+		width: 100%;
+		background:  #C6d5c5;
+		text-align: center;
+		border-radius: 0 0 10px 10px;
+
+	}
+
+	.contacto,
+	.terminos,
+	.rrss,
+	.derechos {
+		width: 18%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 auto;
+		font-size: 18px;
+		padding: 0 15px;
+	}
+
+	.rrss img{
+		width: 25px;
+	}
+
+	.rrss a {
+		text-decoration: none;
+		color: black;
+	}
+
+	
+@media screen and (max-width: 900px) {
+
+	.contenido {
+		width: 100%;
+	}
+	.header-container {
+		height: 200px;
+	}
+	
+	.header-container .menu{
+		width: 100%;
+		text-align: center;
+	}
+
+	.c2 {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.c2 div {
+		margin: auto;
+	}
+
+	.footer-container {
+		top: 5px;
+	}
+
+	.contacto,
+	.terminos,
+	.rrss,
+	.derechos {
+		width: 100%;
+		font-size: 15x;
+	}
+
 }
