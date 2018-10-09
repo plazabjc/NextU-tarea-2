@@ -58,6 +58,7 @@ body {
 	}
 
 	.c1 img{
+		width: 80%;
 		padding: 15px;
 		display: block;
 		margin: auto;
@@ -78,6 +79,7 @@ body {
 	}
 
 	.c2 img {
+		width: 400px;
 		transition-duration: 1s;
 		border: 1px solid black;
 	}
@@ -124,6 +126,42 @@ body {
 	}
 
 	
+
+
+/*PAISAJE*/
+
+.galeria {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background: #82c3a6;
+}
+
+.galeria-content {
+	text-align: center;
+	display: inline-block;
+
+}
+.galeria-content img {
+	width: 250px;
+	padding: 15px 5px;
+}
+
+.galeria-content img:nth-child(1) {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.galeria-content img:nth-child(even) {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.galeria-content img:nth-child(3) {
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
 @media screen and (max-width: 900px) {
 
 	.contenido {
@@ -156,7 +194,12 @@ body {
 	.rrss,
 	.derechos {
 		width: 100%;
-		font-size: 15x;
+		font-size: 15px;
+	}
+
+	.galeria-content img {
+		padding: 15px 15px;
 	}
 
 }
+
